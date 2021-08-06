@@ -15,8 +15,8 @@ export function minPartitions(n: string): number {
     const getOptimizedDeciBinary = (input: string) => {
         let deciBinary = ''
 
-        input.split('').forEach(letter => {
-            if (Number(letter)) {
+        input.split('').forEach(digit => {
+            if (Number(digit)) {
                 deciBinary += '1'
             } else {
                 deciBinary += '0'
